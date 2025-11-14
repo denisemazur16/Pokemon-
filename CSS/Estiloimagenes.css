@@ -1,0 +1,25 @@
+/* Imágenes principales y de personajes */
+
+#imgash,
+#imgpikachu,
+#imgmisty,
+#imgbrock,
+#imgDenise {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    height: auto;                         /* mantiene proporción */
+    border: 5px solid rgb(123, 7, 7);
+    margin: 10px auto 20px;               /* centradas */
+}
+
+/* En móvil, que puedan ocupar más ancho */
+@media (max-width: 768px) {
+    #imgash,
+    #imgpikachu,
+    #imgmisty,
+    #imgbrock,
+    #imgDenise {
+        max-width: 90%;
+    }
+}
