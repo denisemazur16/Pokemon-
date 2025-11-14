@@ -25,6 +25,6 @@ function validateform(){
     return false
   }
 
-  // Si todo está OK:
   return true
+
 }
