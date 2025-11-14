@@ -1,24 +1,24 @@
-/* ========== RESET BÁSICO ========== */
+
 * {
     margin: 0;
     box-sizing: border-box;
 }
 
-/* Para sticky footer */
+
 html, body {
     height: 100%;
 }
 
-/* ========== LAYOUT GENERAL ========== */
+
 body {
-    background-color: rgb(247, 243, 166);  /* buen contraste con texto azul/negro */
+    background-color: rgb(247, 243, 166);  
     display: flex;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     color: #111;
 }
 
-/* Contenido principal: ocupa el espacio entre header y footer */
+
 main {
     flex: 1;
     padding: 20px;
@@ -28,13 +28,13 @@ main {
     text-align: center;
 }
 
-/* Contenedor para centrar y limitar ancho del contenido */
+
 .contenido {
     max-width: 900px;
     margin: 0 auto 40px;
 }
 
-/* ========== HEADER + MENÚ (con flex) ========== */
+
 header {
     background-color: #1f0787;   /* azul Pokémon */
     position: sticky;            /* <- uso de position (sticky) */
@@ -42,7 +42,7 @@ header {
     z-index: 1000;
 }
 
-/* Menú horizontal por defecto (desktop/tablet) */
+
 nav ul {
     list-style-type: none;
     display: flex;               /* flex en el menú */
@@ -52,10 +52,10 @@ nav ul {
     margin: 0;
 }
 
-/* El botón es el <li> */
+
 .botonmenu {
-    background-color: #c4770b;        /* naranja Pokémon */
-    border: 3px solid #f3eeee;        /* borde claro */
+    background-color: #c4770b;        
+    border: 3px solid #f3eeee;       
     width: 170px;
     text-align: center;
     padding: 8px 0;
@@ -63,7 +63,7 @@ nav ul {
     transition: 0.3s;
 }
 
-/* Enlace dentro del botón */
+
 .botonmenu a {
     text-decoration: none;
     color: #f1ecec;
@@ -74,7 +74,7 @@ nav ul {
     height: 100%;
 }
 
-/* Hover (botones coherentes con temática) */
+
 .botonmenu:hover {
     background-color: #aa1e08;        /* rojo pokébola */
     transform: scale(1.04);
@@ -84,7 +84,7 @@ nav ul {
     color: #ffffff;
 }
 
-/* ========== TIPOGRAFÍA Y ESPACIADO ========== */
+
 
 h1 {
     color: rgb(27, 27, 179);
@@ -108,16 +108,16 @@ h3 {
 
 p {
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5;           /* texto legible */
+    line-height: 1.5;           
     margin-bottom: 10px;
 }
 
-/* Listas (por si las usás) */
+
 ol, ul {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Formularios */
+
 form {
     font-family: Arial, Helvetica, sans-serif;
     max-width: 500px;
@@ -125,10 +125,10 @@ form {
 }
 
 form {
-    margin-left: 40px;   /* corre el formulario hacia la derecha */
+    margin-left: 40px;   
 }
 
-/* Footer siempre abajo, con buen contraste */
+
 footer {
     background-color: rgb(20, 19, 112);
     color: rgb(230, 230, 159);
@@ -137,7 +137,7 @@ footer {
     font-size: 0.9rem;
 }
 
-/* ========== MENSAJE DE ÉXITO (página de mensaje) ========== */
+
 .mensaje-exito {
     margin-top: 80px;
     margin-left: auto;
@@ -146,28 +146,25 @@ footer {
     padding: 30px 40px;
     text-align: center;
 
-    background-color: #f0e89a;        /* amarillo suave */
-    color: #1b1bb3;                   /* azul fuerte */
-    border: 3px solid #b22222;        /* rojo */
+    background-color: #f0e89a;        
+    color: #1b1bb3;                  
+    border: 3px solid #b22222;       
     border-radius: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.25rem;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* ========== MEDIA QUERIES (adaptable) ========== */
 
-/* Tablet */
 @media (max-width: 1024px) {
     h1 { font-size: 2.4rem; }
     h2 { font-size: 1.8rem; }
     .contenido { padding: 0 10px; }
 }
 
-/* Móvil */
+
 @media (max-width: 768px) {
 
-    /* Menú vertical en móvil */
     nav ul {
         flex-direction: column;      /* <- ahora vertical */
         align-items: center;
@@ -195,29 +192,30 @@ footer {
     }
 }
 
-/* Lista de episodios como botoncitos centrados */
+
 .lista-episodios {
-    list-style: none;              /* saca los números 1,2,3 de la izquierda */
+    list-style: none;              
     padding: 0;
     margin: 0 0 30px;
-    display: flex;                 /* usamos flex */
-    justify-content: center;       /* centrado horizontal */
-    gap: 20px;                     /* espacio entre botones */
+    display: flex;                 
+    justify-content: center;       
+    gap: 20px;                    
 }
 
 .lista-episodios li a {
     text-decoration: none;
-    color: #1b1bb3;                /* azul, como tus títulos */
-    background-color: #f0e89a;     /* amarillo suave */
-    border: 2px solid #b22222;     /* borde rojo pokébola */
+    color: #1b1bb3;                
+    background-color: #f0e89a;     
+    border: 2px solid #b22222;     
     padding: 6px 14px;
     border-radius: 10px;
     font-weight: bold;
     transition: 0.2s;
 }
 
-/* Efecto al pasar el mouse */
+
 .lista-episodios li a:hover {
     background-color: #b22222;
     color: #ffffff;
+
 }
