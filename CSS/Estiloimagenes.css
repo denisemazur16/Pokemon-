@@ -1,5 +1,3 @@
-/* Imágenes principales y de personajes */
-
 #imgash,
 #imgpikachu,
 #imgmisty,
@@ -8,12 +6,12 @@
     display: block;
     max-width: 300px;
     width: 100%;
-    height: auto;                         /* mantiene proporción */
+    height: auto;                         
     border: 5px solid rgb(123, 7, 7);
-    margin: 10px auto 20px;               /* centradas */
+    margin: 10px auto 20px;               
 }
 
-/* En móvil, que puedan ocupar más ancho */
+
 @media (max-width: 768px) {
     #imgash,
     #imgpikachu,
@@ -23,3 +21,4 @@
         max-width: 90%;
     }
 }
+
